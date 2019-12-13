@@ -1,0 +1,87 @@
+.draw-tools {
+  position: absolute;
+  bottom: 0.5em;
+  left: 25%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: transparent;
+  z-index: 11;
+}
+
+.draw-tools .tool {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.draw-tools .tool.active {
+  color: #f00;
+}
+
+.draw-pens {
+  position: absolute;
+  bottom: 0.5em;
+  right: 25%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: transparent;
+  z-index: 11;
+}
+
+.draw-pens .pen {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 100%;
+  box-shadow: 0 0 0.5em #ccc;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.draw-pens .pen.active {
+  background: #f00;
+}
+
+.draw-color-picker {
+  position: absolute;
+  bottom: 0.5em;
+  right: 36%;
+  z-index: 11;
+}
+
+.draw-color-picker input[type="color"] {
+  display: inline-block;
+  padding: 0;
+  border-radius: 0.2em;
+  border: 1px dashed #ccc;
+  background: transparent;
+}
+
+.draw-context-menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+  background-color: #fff;
+  list-style: none;
+  z-index: 100;
+}
+
+.context-menu-item {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.context-menu-item:hover {
+  color: #f00;
+}
+
+/*修改选择器中shadow DOM的样式
+input[type="color" i]::-webkit-color-swatch-wrapper {
+  padding: 0;
+} */
